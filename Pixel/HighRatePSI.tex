@@ -1,0 +1,39 @@
+% BEGIN PREAMBEL
+\documentclass[9pt, xcolor=dvipsnames]{beamer}
+\usepackage[british]{babel}
+\usepackage{multimedia}
+\input{extrapackages}
+\input{newcommands}
+\input{settings}
+
+\title[short]{title}
+\subtitle{subtitle}
+\titlegraphic{bkg.jpg}
+% END PREAMBEL
+
+\begin{document}
+
+% ============= TITLE PAGE =============
+\include{TitlePage}
+
+% ============= TABLE OF CONTENTS ======
+\begin{frame}%[allowframebreaks]
+	\frametitle{Table of contents}
+	\tableofcontents[hideallsubsections]   % [pausesections]
+\end{frame}
+
+% ============= 1 =============
+% \section{}
+% \include{}
+
+
+% ============= CONCLUSION =============
+\section{Conclusion}
+\include{Conclusion}
+
+% ============= FINAL PAGE =============
+\include{DelFin}
+
+% DOCUMENT END
+\end{document}
+

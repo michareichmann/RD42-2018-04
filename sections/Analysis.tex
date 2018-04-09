@@ -1,0 +1,93 @@
+% ================================== FRAME 0 ===============================================
+\subsection{Leakage Currents}
+\begin{frame}{Leakage Currents}
+
+	\vspace*{-10pt}\fig{CurA2.png}{.38}\vspace*{-25pt}
+	\fig{CurB6.png}{.38}\vspace*{-10pt}
+	
+	\begin{itemize}
+		\itemfill
+		\item beam induced currents visible around 6 p.m.
+		\item both devices mainly stable 
+		\item high base line current in II6-B6
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 1 ===============================================
+\subsection{Raw Data}
+\begin{frame}{Raw Hit Maps}
+
+	\vspace*{-10pt}\subfigsc{.45}{.45}{OccA2-1}{OccB6-1}{.53}{II6-A2}{II6-B6}\vspace*{-10pt}
+	
+	\begin{itemize}
+		\itemfill
+		\item pixel chips tuned to \SI{\sim1500}{e} threshold
+		\item some \bad{hot} and \dead{dead} or \dead{inefficient} pixels
+		\item bad bump bonding in top right corner of II6-B6
+		\item few hits in unbonded area (correlated to tracks)
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 2 ===============================================
+\subsection{Event Selection}
+\begin{frame}{General Cuts}
+
+	\begin{itemize}\itemfill
+		\item Event Range
+		\begin{itemize}\vspace*{3pt}
+			\item discard first minute of the run \ra unstable beam conditions
+		\end{itemize}
+		\item Beam Interruptions
+		\begin{itemize}\vspace*{3pt}
+			\item beam sent to another area for \SI{5}{\second} every \SI{5}{\minute}
+			\item exclude \SI{5}{\second} before and \SI{15}{\second} after the interruption
+		\end{itemize}
+		\item Tracks
+		\begin{itemize}\vspace*{3pt}
+			\item only events with exact one cluster in every tracking plane
+		\end{itemize}
+		\item Track $\upchi^2$
+		\begin{itemize}\vspace*{3pt}
+			\item exclude events with $\upchi^2 > \SI{90}{\%}$ quartile separately in x- and y-direction
+		\end{itemize}
+		\item Track Angle
+		\begin{itemize}\vspace*{3pt}
+			\item exclude events with $\upalpha > \SI{2}{^{\circ}}$ from mean angle
+		\end{itemize}
+		\item R-Hit
+		\begin{itemize}\vspace*{3pt}
+			\item discard events with distance of predicted hit position to cluster position \SI{>90}{\%} quartile
+		\end{itemize}
+	\end{itemize}
+	
+\end{frame}
+% ================================== FRAME 3 ===============================================
+\begin{frame}{Fiducial Cut}
+
+	\begin{itemize}
+		\itemfill
+		\item select suitable area of the diamond\vspace*{5pt}
+		\begin{itemize}
+			\item no dead pixels
+			\item away from the border to unbonded pixels
+		\end{itemize}
+	\end{itemize}
+	
+	\subfigspc{FidCut}{FidCutB6}{.5}{II6-A2}{II6-B6}
+\end{frame}
+% ================================== FRAME 4 ===============================================
+\begin{frame}{Trigger Phase Cut}
+
+	\begin{itemize}\itemfill
+		\item Trigger Phase: select only efficient trigger phases (3-7)
+		\begin{itemize}\itemfill
+			\vspace*{3pt}
+			\item time the trigger arrived at the DTB wrt. the \SI{40}{\mega\hertz} clock
+			\item only certain range where trigger can arrive (due to trigger logic)
+			\item others are random hits and have to be excluded
+		\end{itemize}
+	\end{itemize}
+	
+	\subfigspc{TrigPhase}{TrigPhaseCut}{.45}{Distribution}{Efficiency}\vspace*{-10pt}
+	
+\end{frame}

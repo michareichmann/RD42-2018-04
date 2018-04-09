@@ -1,0 +1,88 @@
+\subsection{Efficiency}
+% ================================== FRAME 0 ===============================================
+\begin{frame}{Efficiency Maps}
+
+	\begin{figure}\centering
+	
+		\begin{subfigure}{.28\textwidth}\centering
+			\vspace*{.21\textheight}\includegraphics[width=.32\textheight, angle=-90]{EffMapA2}\caption{II6-A2}
+		\end{subfigure}
+		\begin{subfigure}{.28\textwidth}\centering
+			\vspace*{.21\textheight}\includegraphics[width=.32\textheight, angle=-90]{EffMapB6}\caption{II6-B6}
+		\end{subfigure}
+		\subfigp[0.4]{EffMapSil}{.53}{Silicon reference}
+	\end{figure}
+	
+	\begin{itemize}
+		\item Efficiency = Number of hits in 3D per track passed through the DUT
+		\item total trigger area from telescope bigger than 3D
+		\item centre regions highly efficient
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 1 ===============================================
+\begin{frame}{Efficiencies}
+
+	\def\d{.4}
+	\begin{figure}\centering
+		\subfigp[0.32]{EffA2}{\d}{II6-A2}
+		\subfigp[0.32]{EffB6}{\d}{II6-B6}
+		\subfigp[0.32]{EffSil}{\d}{Silicon reference}
+	\end{figure}
+	
+	\begin{itemize}
+		\item efficiencies stable in time
+		\item lower efficiency for 3D with big cell size
+		\item silicon almost fully efficient
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 2 ===============================================
+\begin{frame}{Efficiency vs Voltage}
+
+	\vspace*{-10pt}\subfigsp{EffVol}{EffVolZ}{.5}
+
+	\begin{itemize}\itemfill
+		\item already working with \SI{0}{\volt} (just chip voltage)
+		\item reaches highest efficiency already at \SI{-30}{\volt}
+		\item drop at higher voltages probably due to single pixels with high currents
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 2.1 ===============================================
+\begin{frame}{Leakage Current During Voltage Scan}
+
+	\vspace*{-10pt}\fig{LCVC}{.5}
+
+	\begin{itemize}\itemfill
+		\item high leakage current stepwise increasing with voltage
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 3 ===============================================
+\begin{frame}{Efficiency vs Rate}
+
+	\vspace*{-10pt}\subfigsp{HitEffs}{HitEffs0}{.5}
+	
+	\begin{itemize}\itemfill
+		\item first run: top left point
+		\item efficiency seems to slightly drop with rate and time
+		\begin{itemize}\vspace*{3pt}
+			\item data-taking less stable at higher rates
+		\end{itemize}
+
+	\end{itemize}
+
+\end{frame}
+% ================================== FRAME 3 ===============================================
+\begin{frame}{Efficiency vs Tilting Angle}
+
+	\vspace*{-10pt}\figp{EffAll}{.5}
+
+	\begin{itemize}\itemfill
+		\item very preliminary
+		\item no good adaption of fiducial cut yet
+		\item efficiency totally recovers
+	\end{itemize}
+
+\end{frame}

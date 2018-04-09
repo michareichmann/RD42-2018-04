@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Detectors}
+
+	\begin{table}\centering
+		\begin{tabular}{lcc} %{.95\textwidth}
+								& \good{II6-A2}						& \good{II6-B6} 					\\\noalign{\hrule height 1.3pt}
+			manufacturer 		& II-VI Inc.						& II-VI Inc.						\\
+			diamond type 		& poly-crystal						& poly-crystal						\\
+			size		 		& \SI{\sim4x4}{\milli\meter}		& \SI{\sim4x4}{\milli\meter}		\\
+			thickness	 		& \SI{\sim500}{\micro\meter}		& \SI{\sim500}{\micro\meter}		\\
+			construction 		& summer 2016						& summer 2017						\\
+			3D drilling 		& Oxford							& Oxford							\\
+			\good{3D cell size}	& \good{\SI{150x100}{\micro\meter}}	& \good{\SI{50x50}{\micro\meter}}	\\
+			\good{columns}	 	& \good{\SI{20x30}{} (600)}			& \good{\SI{60x62}{} (3720)}		\\
+			pixel chip	 		& PSI46digV2.1respin (CMS)			& PSI46digV2.1respin (CMS)			\\
+			pixel pitch	 		& \SI{150x100}{\micro\meter}		& \SI{150x100}{\micro\meter}		\\
+			ganged cells	 	& \SI{1x1}{}						& \SI{2x3}{} (6 cells)				\\
+			bump \& wire bonding& Princeton							& Princeton							\\\noalign{\hrule height 1.3pt}
+% 				 	& 			& 			\\
+		\end{tabular}
+	\end{table}
+	
+	\uncover<2->{
+		\begin{itemize}\itemfill
+			\item II6-A2 broke in October 2016 (chip malfunctioned)
+			\item successful re-bonding to new chip in the spring 2017
+		\end{itemize}\vspace*{10pt}}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Measurements}
+ 
+	\begin{table}
+		\begin{tabular}{lcccc}
+									& \good{Oct 2016}		& \good{May 2017}	& \good{Aug 2017-1}	& \good{Aug 2017-2}	\\\noalign{\hrule height 1.3pt}
+			\good{II6-A2}			& \cmark					& \cmark 			& \cmark				& \xmark				\\
+			\good{II6-B6}			& \xmark					& \xmark 			& \cmark				& \cmark				\\
+			\good{rate scan}		& \cmark 					& \cmark  			& \cmark				& \xmark				\\
+			\good{voltage scan}		& \cmark				 	& \cmark  			& \cmark				& \xmark				\\
+			\good{rise time scan}	& \xmark	 				& \cmark  			& \cmark				& \xmark				\\
+			\good{angle scan}		& \xmark	 				& \xmark  			& \xmark				& \cmark				\\\noalign{\hrule height 1.3pt}
+		\end{tabular}
+	\end{table}\vspace*{20pt}
+	
+	\begin{itemize}\itemfill
+		\item rate scan: fixed voltage with periodical change in flux
+		\item voltage scan: fixed flux with increasing or decreasing bias voltage
+		\item rise time scan: change of amplifier rise time at fixed flux and voltage
+		\item angle scan: change of incident angle at fixed flux and voltage
+	\end{itemize}
+
+\end{frame}

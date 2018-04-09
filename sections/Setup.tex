@@ -1,0 +1,28 @@
+% ================================== 1 ===============================================
+\subsection{Pixel Telescope}
+\begin{frame}{Pixel Telescope}
+
+	\vspace*{-7pt}\figc{3DTel1}{.48}{modular ETH beam telescope in pixel configuration}\vspace*{-10pt}
+	
+	\begin{itemize}\itemfill
+		\item 4 tracking planes with trigger (fast-OR) and \SI{25}{\nano\second} time precision
+		\item up to 3 DUT planes (any digital pixel detector)
+		\item scintillator for precise trigger timing \ra \orderof{\SI{1}{\nano\second}}
+		\item spatial resolution of \SI{\sim188x175}{\micro\meter} (multiple scattering)
+	\end{itemize}
+
+\end{frame}
+% ================================== 2 ===============================================
+\subsection{Schematic Setup}
+\begin{frame}{Schematic Setup}
+
+	\vspace*{-7pt}\fig{TelScheme}{.53}\vspace*{-3pt}
+	
+	\begin{itemize}
+		\item independent telescope module as DUT (light green)
+		\item Digital Test Board (DTB) and pXar software for the telescope readout
+		\item global trigger as coincidence of fast-OR self trigger and scintillator signal
+		\item EUDAQ as DAQ framework
+	\end{itemize}
+
+\end{frame}
